@@ -1,0 +1,25 @@
+{
+  "name": "my-node-cli",
+  "bin": {
+    "mycli": "./dist/src/index.js"
+  },
+  "version": "0.0.1",
+  "description": "npm init",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "main": "node dist/src/index.js",
+    "dev": "tsc -w",
+    "link-cli": "npm unlink --local my-node-cli && npm link --local my-node-cli",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "winston": "^3.11.0"
+  }
+}

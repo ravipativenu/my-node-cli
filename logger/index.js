@@ -1,8 +1,8 @@
-import { buildDevLogger } from "./dev-logger"
-import { buildProdLogger } from "./prod-logger"
-import { Logger } from "winston"
+const { buildDevLogger } = require('./dev-logger');
+const { buildProdLogger } = require('./prod-logger');
+const { Logger } = require('winston');
 
-let logger: Logger;
+let logger;
 
 if (process.env.NODE_ENV === 'development') {
     logger = buildDevLogger();
@@ -10,7 +10,6 @@ if (process.env.NODE_ENV === 'development') {
     logger = buildProdLogger();
 } else {
     logger = buildDevLogger();
-};
+}
 
-
-export { logger };
+module.exports = { logger };

@@ -1,15 +1,15 @@
 {
   "name": "my-node-cli",
   "bin": {
-    "mycli": "./dist/src/index.js"
+    "mycli": "./index.js"
   },
   "version": "0.0.1",
   "description": "npm init",
-  "main": "dist/src/index.js",
+  "main": "index.js",
   "scripts": {
-    "main": "node dist/src/index.js",
+    "main": "node index.js",
     "dev": "tsc -w",
-    "link-cli": "npm unlink --local my-node-cli && npm link --local my-node-cli",
+    "install-cli": "npm install -g .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

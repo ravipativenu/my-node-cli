@@ -2,7 +2,7 @@ const { createLogger, transports, format } = require('winston');
 
 function buildDevLogger() {
     const myCustomFormat = format.printf((info) => {
-        return `${info.timestamp} ${info.level}: ${info.stack || info.message}`;
+        return `${info.timestamp}: ${info.level}: ${info.stack || info.message}`;
     });
 
     const logger = createLogger({

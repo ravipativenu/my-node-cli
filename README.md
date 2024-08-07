@@ -195,6 +195,10 @@ Create or get cloud foundry service instance. Internally it uses cf cli using ap
 
 </br>
 
+![alt text](images/IMG12.PNG)
+
+</br>
+
 </details>
 
 </br>

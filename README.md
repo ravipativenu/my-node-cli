@@ -1,19 +1,32 @@
 # my-node-cli
 
+</br>
+
 ## Start project
+
+</br>
 
 npm init -y
 
+</br>
+
 ## Compile to java script file
+
+</br>
 
 tsc .\sandbox\sandbox.ts
 
-## Watchihg changes
+</br>
+
+## Watching changes
+
+</br>
 
 tsc .\sandbox\sandbox.ts -w
 
+</br>
 
-When you are working with package.json in any form, you have 3 wyas you cna install your packages
+When you are working with package.json in any form, you have 3 ways you can install your packages
 
 - npm
 - yarn
@@ -43,4 +56,52 @@ C:\Users\vravipati\AppData\Roaming\npm\mycli
 
 npm install -g .
 
+</br>
+</br>
+
+# Commands
+
+</br>
+
+<details>
+
+<summary>hello</summary>
+
+### hello
+
+</br>
+
+![alt text](images/IMG1.PNG)
+
+</br>
+
+![alt text](images/IMG2.PNG)
+
+</br>
+
+</details>
+
+</br>
+
+<details>
+
+<summary>cftarget</summary>
+
+### cftarget
+
+</br>
+
+Get cloud foundry target. Internally it uses cf cli
+
+</br>
+
+![alt text](images/IMG3.PNG)
+
+</br>
+
+![alt text](images/IMG4.PNG)
+
+</br>
+
+</details>
 

@@ -1,0 +1,23 @@
+    {
+        "credentials": {
+            "host": "e4f301c5-062f-4347-ac51-da4ccc0d854b.hana.trial-us10.hanacloud.ondemand.com",
+            "port": "443",
+            "user": "641C7E4F8DF5414AA60AF7DC33D41DB2_8KSUKVS1PYL5E3RBYQQE1P79C_RT",
+            "password": "Hp91D99PAvHkBUAkJyVD9vFHtxEXP.rJkmMfAYQOX9SgE21-0n5kq_vTATyHc1CncxjhVQ2Z4qe2ynExsuBNa9feff8WPkKulzsFM1HPalc9u2Hq34DHsxS.XipXdZ-J",
+            "schema": "641C7E4F8DF5414AA60AF7DC33D41DB2",
+            "type": "hana",
+            "url": "jdbc:sap://e4f301c5-062f-4347-ac51-da4ccc0d854b.hana.trial-us10.hanacloud.ondemand.com:443?encrypt=true&validateCertificate=true&currentschema=641C7E4F8DF5414AA60AF7DC33D41DB2",
+            "hdi_user": "641C7E4F8DF5414AA60AF7DC33D41DB2_8KSUKVS1PYL5E3RBYQQE1P79C_DT",
+            "hdi_password": "Xe0AMUSaX_XPsaUGb8v7QMoTuivkAU4jK2H6xOuQIrOBAmnr0ytHIfDzZy1o..aFlavw_WOcS.gQVRPsy8KC38ay2Ed6Jm._Aw2Ai6rtmTWM3V.HoNnHQN.0XtKD1L.3",
+            "database_id": "e4f301c5-062f-4347-ac51-da4ccc0d854b",
+            "driver": "com.sap.db.jdbc.Driver",
+            "plan": "hdi-shared"
+        },
+        "label": "hana",
+        "name": "cpapp-db-instance",
+        "tags": [
+            "hana",
+            "database",
+            "relational"
+        ]
+    }

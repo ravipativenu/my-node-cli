@@ -85,6 +85,54 @@ npm install -g .
 
 <details>
 
+<summary>cfv</summary>
+
+### cfv
+
+</br>
+
+Get cloud foundry cli version. Internally it uses cf cli
+
+</br>
+
+![alt text](images/IMG5.PNG)
+
+</br>
+
+![alt text](images/IMG6.PNG)
+
+</br>
+
+</details>
+
+</br>
+
+<details>
+
+<summary>cfoauth</summary>
+
+### cfv
+
+</br>
+
+Get cloud foundry oauth token. Internally it uses cf cli
+
+</br>
+
+![alt text](images/IMG7.PNG)
+
+</br>
+
+![alt text](images/IMG8.PNG)
+
+</br>
+
+</details>
+
+</br>
+
+<details>
+
 <summary>cftarget</summary>
 
 ### cftarget
@@ -104,4 +152,53 @@ Get cloud foundry target. Internally it uses cf cli
 </br>
 
 </details>
+
+</br>
+
+<details>
+
+<summary>cfspace</summary>
+
+### cfspace
+
+</br>
+
+Get cloud foundry space. Internally it uses cf cli
+
+</br>
+
+![alt text](images/IMG9.PNG)
+
+</br>
+
+![alt text](images/IMG10.PNG)
+
+</br>
+
+</details>
+
+</br>
+
+<details>
+
+<summary>cfservice</summary>
+
+### cfservice
+
+</br>
+
+Create or get cloud foundry service instance. Internally it uses cf cli using api
+
+</br>
+
+![alt text](images/IMG11.PNG)
+
+</br>
+
+</details>
+
+</br>
+
+
+
 

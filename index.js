@@ -7,6 +7,7 @@ const cfUtil = require("./lib/util/cf")
 const program = new Command();
 
 // Add actions onto that CLI
+
 program.command('hello')
         .description("say hello to some one..!")
         .argument("<string>", "string to say hi to")
@@ -14,54 +15,58 @@ program.command('hello')
                 console.log(`hi ${string} ..!`);
         })
 
+
+program.command('cfv')
+        .description("get cf cli version")
+        .action(async () => {
+                        result = await cfUtil.checkCliVersion();
+                        console.log(result);
+                });
+
+
+program.command('cfoauth')
+        .description("get cloud foundry oauth token")
+        .action(async () => {
+                result = await cfUtil.getCfAuthorization();
+                console.log(result);
+        });
+
 program.command('cftarget')
-        .description("get cloud foundry target")        
+        .description("get cloud foundry target information")        
         .action(async () => {
                         result = await cfUtil.getCfTarget();
                         console.log(result);
                 });
 
 
-// program.command('mycfoauth')
-//         .action(async () => {
-//                 result = await cfUtil.getCfAuthorization();
-//                 console.log(result);
-//         })
-//         .description("Cloud Foundry OAuthToken");
 
-// program.command('mycfv')
-//         .action(async () => {
-//                 result = await cfUtil.checkCliVersion();
-//                 console.log(result);
-//         })
-//         .description("Cloud Foundry Version");
+program.command('cfspace')
+        .description("get cf space info")
+        .action(async () => {
+                try {
+                        result = await cfUtil.getCfSpaceInfo();
+                        console.log(result);
+                }
+                catch (e) {
+                        console.log(e);
+                }
+        });
 
-// program.command('mycfspaceinfo')
-//         .action(async () => {
-//                 try {
-//                         result = await cfUtil.getCfSpaceInfo();
-//                         console.log(result);
-//                 }
-//                 catch (e) {
-//                         console.log(e);
-//                 }
-//         })
-//         .description("Cloud Foundry Version");
-
-// program.command('mycfservice')
-//         .addArgument("<serviceName>", "Service")
-//         .addArgument("<servicePlan>", "Plan")
-//         .addArgument("<serviceInstanceName>", "Service Instance Name")
-//         .action(async (serviceName, servicePlan, serviceInstanceName) => {
-//                 try {
-//                         result = await cfUtil.getOrProvisionService(serviceName, servicePlan, serviceInstanceName);
-//                         console.log(result);
-//                 }
-//                 catch (e) {
-//                         console.log(e);
-//                 }
-//         })
-//         .description("Create/ Get Cloud Foundry Service");
+program.command('cfservice')
+        .description("create / get cloud foundry service")
+        .addArgument("<serviceName>", "service")
+        .addArgument("<servicePlan>", "plan")
+        .addArgument("<serviceInstanceName>", "service instance name")
+        .action(async (serviceName, servicePlan, serviceInstanceName) => {
+                try {
+                        result = await cfUtil.getOrProvisionService(serviceName, servicePlan, serviceInstanceName);
+                        console.log(result);
+                }
+                catch (e) {
+                        console.log(e);
+                }
+        })
+        
 
 // program.command('mysflightsetup')
 //         .action(async () => {
